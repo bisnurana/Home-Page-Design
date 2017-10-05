@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Prompt:400,700|Quicksand");
-/*@mixin sans-serif($fs,$ls:.6em,$color,$tt,$lh:1,$ff){
-  font-size: $fs;
-  letter-spacing: $ls;
-  color:$color;
-  text-transform:$tt;
-  line-height: $lh;
-  font-family:$ff;
-}*/
 /*! normalize.css v7.0.0 | MIT License */
 /* Document
    ========================================================================== */
@@ -74,7 +66,7 @@ figure {
  */
 hr {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -103,7 +95,7 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -237,7 +229,7 @@ fieldset {
  */
 legend {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -273,7 +265,7 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -353,5 +345,16 @@ template {
 body {
   background-color: #1098F7;
   font-family: "Quicksand", sans-serif;
-  line-height: 1.6;
-  background-color: #fff; }
+  line-height: 1.6; }
+
+.navbar {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+  .navbar .navbar-brand {
+    font-weight: 700;
+    font-family: "Prompt", sans-serif;
+    color: #363636;
+    letter-spacing: 2px;
+    font-size: 24px; }
+  .navbar .navbar-toggler {
+    border: none; }

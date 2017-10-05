@@ -1,26 +1,6 @@
 // Main Sass File
 @import url('https://fonts.googleapis.com/css?family=Prompt:400,700|Quicksand');
-//colors
-$white:#fff;
-$dark:#363636;
-$light-gray:#95989A;
-$primary: #1098F7;
 
-//fonts
-$f-primary:'Prompt', sans-serif;;
-$f-secondary:'Quicksand', sans-serif;
-$fw-normal:400;
-$fw-bold:700;
-
-//mixins
-/*@mixin sans-serif($fs,$ls:.6em,$color,$tt,$lh:1,$ff){
-  font-size: $fs;
-  letter-spacing: $ls;
-  color:$color;
-  text-transform:$tt;
-  line-height: $lh;
-  font-family:$ff;
-}*/
 
 //normalize vendor
 /*! normalize.css v7.0.0 | MIT License */
@@ -414,13 +394,35 @@ template {
   display: none;
 }
 
+//colors
+$white:#fff;
+$dark:#363636;
+$light-gray:#95989A;
+$primary: #1098F7;
+$secondary:#95f9e3;
+
+//fonts
+$f-primary:'Prompt', sans-serif;;
+$f-secondary:'Quicksand', sans-serif;
+$fw-normal:400;
+$fw-bold:700;
+
 body{
   background-color: $primary;
   font-family: $f-secondary;
   line-height: 1.6;
-  background-color: $white;
 }
 
-h1{
-
+.navbar{
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  .navbar-brand {
+    font-weight: $fw-bold;
+    font-family: $f-primary;
+    color:$dark;
+    letter-spacing: 2px;
+    font-size: 24px;
+  }
+  .navbar-toggler{
+    border:none;
+  }
 }
