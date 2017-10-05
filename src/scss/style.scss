@@ -1,5 +1,5 @@
 // Main Sass File
-@import url('https://fonts.googleapis.com/css?family=Prompt:400,700|Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Prompt:400,600,700|Quicksand');
 
 
 //normalize vendor
@@ -398,31 +398,49 @@ template {
 $white:#fff;
 $dark:#363636;
 $light-gray:#95989A;
-$primary: #1098F7;
-$secondary:#95f9e3;
+$secondary: #1098F7;
+$primary:#95f9e3;
 
 //fonts
 $f-primary:'Prompt', sans-serif;;
 $f-secondary:'Quicksand', sans-serif;
-$fw-normal:400;
+$fw-medium:600;
 $fw-bold:700;
 
 body{
-  background-color: $primary;
   font-family: $f-secondary;
   line-height: 1.6;
-}
+  font-weight: $fw-medium;
 
+}
 .navbar{
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
   .navbar-brand {
     font-weight: $fw-bold;
     font-family: $f-primary;
-    color:$dark;
     letter-spacing: 2px;
     font-size: 24px;
   }
   .navbar-toggler{
     border:none;
+  }
+}
+#banner-section{
+  background-image: url('../img/banner-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:640px;
+  height: 80vh;
+  @media (max-width: 768px) {height:100%;}
+  .color-overlay{
+    background:rgba($primary,0.4);
+  }
+  .card{
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    background-color:white;
+    input:focus{
+      border-color: #28a745 !important ;}
   }
 }

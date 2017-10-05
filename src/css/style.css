@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Prompt:400,700|Quicksand");
+@import url("https://fonts.googleapis.com/css?family=Prompt:400,600,700|Quicksand");
 /*! normalize.css v7.0.0 | MIT License */
 /* Document
    ========================================================================== */
@@ -343,9 +343,9 @@ template {
   display: none; }
 
 body {
-  background-color: #1098F7;
   font-family: "Quicksand", sans-serif;
-  line-height: 1.6; }
+  line-height: 1.6;
+  font-weight: 600; }
 
 .navbar {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -353,8 +353,27 @@ body {
   .navbar .navbar-brand {
     font-weight: 700;
     font-family: "Prompt", sans-serif;
-    color: #363636;
     letter-spacing: 2px;
     font-size: 24px; }
   .navbar .navbar-toggler {
     border: none; }
+
+#banner-section {
+  background-image: url("../img/banner-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 640px;
+  height: 80vh; }
+  @media (max-width: 768px) {
+    #banner-section {
+      height: 100%; } }
+  #banner-section .color-overlay {
+    background: rgba(149, 249, 227, 0.4); }
+  #banner-section .card {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: white; }
+    #banner-section .card input:focus {
+      border-color: #28a745 !important; }
