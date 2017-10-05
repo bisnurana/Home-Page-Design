@@ -2,7 +2,6 @@
 
 Includes complete Bootstrap 4.0.0-beta dev environment with gulp and sass
 
-If you are looking for the alpha6 version [click here](https://github.com/bradtraversy/bs4starter_alpha6)
 
 ### Version
 
@@ -11,7 +10,7 @@ If you are looking for the alpha6 version [click here](https://github.com/bradtr
 ## Install Dependencies
 
 ```bash
-npm install 
+npm install
 ```
 
 ## Compile Sass & Run Dev Server

@@ -12,6 +12,16 @@ $f-secondary:'Quicksand', sans-serif;
 $fw-normal:400;
 $fw-bold:700;
 
+//mixins
+/*@mixin sans-serif($fs,$ls:.6em,$color,$tt,$lh:1,$ff){
+  font-size: $fs;
+  letter-spacing: $ls;
+  color:$color;
+  text-transform:$tt;
+  line-height: $lh;
+  font-family:$ff;
+}*/
+
 //normalize vendor
 /*! normalize.css v7.0.0 | MIT License */
 
@@ -409,4 +419,8 @@ body{
   font-family: $f-secondary;
   line-height: 1.6;
   background-color: $white;
+}
+
+h1{
+
 }

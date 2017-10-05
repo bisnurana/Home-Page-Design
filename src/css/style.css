@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Prompt:400,700|Quicksand");
+/*@mixin sans-serif($fs,$ls:.6em,$color,$tt,$lh:1,$ff){
+  font-size: $fs;
+  letter-spacing: $ls;
+  color:$color;
+  text-transform:$tt;
+  line-height: $lh;
+  font-family:$ff;
+}*/
 /*! normalize.css v7.0.0 | MIT License */
 /* Document
    ========================================================================== */
@@ -65,7 +73,8 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -93,7 +102,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -226,7 +236,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -261,7 +272,8 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
