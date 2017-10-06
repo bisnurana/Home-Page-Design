@@ -411,11 +411,17 @@ body{
   font-family: $f-secondary;
   line-height: 1.6;
   font-weight: $fw-medium;
+  h1,h2,h3,h4{
+    font-family: $f-primary;
+  }
 
+}
+.p-text{
+  color:$light-gray;
 }
 .navbar{
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  .navbar-brand {
+  .navbar-brand h1 {
     font-weight: $fw-bold;
     font-family: $f-primary;
     letter-spacing: 2px;
@@ -432,7 +438,8 @@ body{
   background-repeat: no-repeat;
   height:640px;
   height: 80vh;
-  @media (max-width: 768px) {height:100%;}
+  @media (max-width: 768px) {
+    height:100%;}
   .color-overlay{
     background:rgba($primary,0.4);
   }
@@ -440,7 +447,23 @@ body{
     border-radius: 5px;
     box-shadow: 0 0 3px rgba(0,0,0,0.2);
     background-color:white;
+
     input:focus{
       border-color: #28a745 !important ;}
   }
+}
+.card-report{
+  background-color: rgba($white,0.5);
+  border:1px solid rgba($dark,0.8);
+  max-width: 160px;
+  p {
+    font-size:16px;
+    span{
+      display: block;
+      font-size:30px;
+      color: $secondary;
+      font-family: $f-secondary;
+    }
+  }
+
 }

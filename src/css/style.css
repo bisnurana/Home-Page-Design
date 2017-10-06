@@ -346,11 +346,16 @@ body {
   font-family: "Quicksand", sans-serif;
   line-height: 1.6;
   font-weight: 600; }
+  body h1, body h2, body h3, body h4 {
+    font-family: "Prompt", sans-serif; }
+
+.p-text {
+  color: #95989A; }
 
 .navbar {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
-  .navbar .navbar-brand {
+  .navbar .navbar-brand h1 {
     font-weight: 700;
     font-family: "Prompt", sans-serif;
     letter-spacing: 2px;
@@ -377,3 +382,15 @@ body {
     background-color: white; }
     #banner-section .card input:focus {
       border-color: #28a745 !important; }
+
+.card-report {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(54, 54, 54, 0.8);
+  max-width: 160px; }
+  .card-report p {
+    font-size: 16px; }
+    .card-report p span {
+      display: block;
+      font-size: 30px;
+      color: #1098F7;
+      font-family: "Quicksand", sans-serif; }
