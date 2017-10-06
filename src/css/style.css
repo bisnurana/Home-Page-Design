@@ -392,5 +392,25 @@ body {
     .card-report p span {
       display: block;
       font-size: 30px;
-      color: #1098F7;
+      color: #28a745;
       font-family: "Quicksand", sans-serif; }
+
+.btn-default {
+  color: #fff;
+  background-color: #363636; }
+  .btn-default:hover {
+    background-color: #28a745;
+    color: #fff; }
+
+.bb-1 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7); }
+
+#feature-section {
+  background-color: #95f9e3; }
+  #feature-section ul {
+    list-style-type: none; }
+    #feature-section ul .list-item {
+      color: rgba(54, 54, 54, 0.6);
+      font-size: 18px; }
+      #feature-section ul .list-item span {
+        color: #363636; }

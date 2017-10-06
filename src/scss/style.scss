@@ -398,7 +398,7 @@ template {
 $white:#fff;
 $dark:#363636;
 $light-gray:#95989A;
-$secondary: #1098F7;
+$secondary: #28a745;
 $primary:#95f9e3;
 
 //fonts
@@ -466,4 +466,28 @@ body{
     }
   }
 
+}
+.btn-default{
+  color: $white;
+  background-color: $dark;
+  &:hover{
+    background-color:$secondary;
+    color:$white;
+  }
+}
+.bb-1{
+  border-bottom: 1px solid rgba($white,0.7);
+}
+#feature-section{
+  background-color: $primary;
+  ul{
+    list-style-type: none;
+    .list-item{
+      color:rgba($dark,0.6);
+      font-size:18px;
+      span{
+        color: $dark;
+      }
+    }
+  }
 }
