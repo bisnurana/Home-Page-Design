@@ -367,9 +367,7 @@ body {
   background-image: url("../img/banner-bg.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  height: 640px;
-  height: 80vh; }
+  background-repeat: no-repeat; }
   @media (max-width: 768px) {
     #banner-section {
       height: 100%; } }
@@ -408,9 +406,27 @@ body {
 #feature-section {
   background-color: #95f9e3; }
   #feature-section ul {
-    list-style-type: none; }
+    list-style-type: none;
+    max-width: 320px; }
     #feature-section ul .list-item {
       color: rgba(54, 54, 54, 0.6);
       font-size: 18px; }
       #feature-section ul .list-item span {
         color: #363636; }
+
+#ui-section {
+  background-color: #363636; }
+  #ui-section .owl-carousel img {
+    width: 98%;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    #ui-section .owl-carousel img:hover {
+      cursor: pointer;
+      width: 100%; }
+  #ui-section .owl-carousel .owl-dots {
+    padding: 10px 0; }
+    #ui-section .owl-carousel .owl-dots .owl-dot :hover {
+      background-color: #95f9e3; }
+    #ui-section .owl-carousel .owl-dots .owl-dot.active span {
+      width: 30px;
+      background-color: #95f9e3; }

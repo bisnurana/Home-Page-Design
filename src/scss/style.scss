@@ -436,8 +436,6 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height:640px;
-  height: 80vh;
   @media (max-width: 768px) {
     height:100%;}
   .color-overlay{
@@ -482,11 +480,41 @@ body{
   background-color: $primary;
   ul{
     list-style-type: none;
+    max-width: 320px;
     .list-item{
       color:rgba($dark,0.6);
       font-size:18px;
       span{
         color: $dark;
+      }
+    }
+  }
+}
+
+#ui-section{
+  background-color:$dark;
+  .owl-carousel{
+    img{
+      width:98%;
+      transition: all 0.3s ease;
+      &:hover{
+        cursor:pointer;
+        width:100%;
+      }
+    }
+
+    .owl-dots{
+      padding:10px 0;
+      .owl-dot{
+        :hover{
+          background-color: $primary;
+        }
+        &.active{
+          span{
+            width: 30px;
+            background-color: $primary;
+          }
+        }
       }
     }
   }
