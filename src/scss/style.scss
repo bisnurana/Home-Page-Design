@@ -421,14 +421,21 @@ body{
 }
 .navbar{
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  .navbar-brand h1 {
-    font-weight: $fw-bold;
-    font-family: $f-primary;
-    letter-spacing: 2px;
-    font-size: 24px;
+  .navbar-brand img{
+    width:54px;
+    height:auto;
   }
   .navbar-toggler{
     border:none;
+    height: 31.15px;
+    width: 41.15px;
+    border-radius:200%;
+    transition: all 0.3s ease;
+    &:focus{
+      height: 41.15px;
+      width: 41.15px;
+      background-color:rgba($primary,0.7);
+    }
   }
 }
 #banner-section{
@@ -447,7 +454,7 @@ body{
     background-color:white;
 
     input:focus{
-      border-color: #28a745 !important ;}
+      border-color: $secondary !important ;}
   }
 }
 .card-report{
@@ -466,8 +473,8 @@ body{
 
 }
 .btn-default{
-  color: $white;
-  background-color: $dark;
+  color: $secondary;
+  font-weight: $fw-medium;
   &:hover{
     background-color:$secondary;
     color:$white;
@@ -495,11 +502,12 @@ body{
   background-color:$dark;
   .owl-carousel{
     img{
-      width:98%;
+      transform: scale(0.8);
       transition: all 0.3s ease;
+
       &:hover{
         cursor:pointer;
-        width:100%;
+        transform: scale(1);
       }
     }
 
@@ -507,15 +515,66 @@ body{
       padding:10px 0;
       .owl-dot{
         :hover{
-          background-color: $primary;
+          background-color: $secondary;
         }
         &.active{
           span{
             width: 30px;
-            background-color: $primary;
+            background-color: $secondary;
           }
         }
       }
     }
+  }
+}
+
+#testimonial-section{
+  background-color: $primary;
+  blockquote{
+    margin: 5px 0;
+    color: rgba($dark,0.7);
+    font-size: 14px;
+  }
+  .card{
+    background-color: transparent;
+    margin:20px auto;
+    .card-body{
+      padding: 0;
+      .user-title{
+        font-size: 14px;
+        text-align: left;
+        font-family: $primary;
+        font-weight: $fw-medium;
+      }
+    }
+  }
+}
+#subscribe-section{
+  input{
+    &:hover{
+      border-color:$secondary;
+    }
+  }
+}
+#footer-section{
+  .footer-brand{
+    img{width: 54px;
+    height: auto;
+  }
+  }
+  .footer-list-item{
+    list-style-type: none;
+    span{
+      display: block;
+      margin:0 auto;
+      font-weight: $fw-medium;
+    }
+    li a{
+      color:rgba($dark,0.7);
+      font-size: 14px;
+    }
+  }
+  .copy-right{
+    background-color: $primary;
   }
 }

@@ -355,13 +355,20 @@ body {
 .navbar {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
-  .navbar .navbar-brand h1 {
-    font-weight: 700;
-    font-family: "Prompt", sans-serif;
-    letter-spacing: 2px;
-    font-size: 24px; }
+  .navbar .navbar-brand img {
+    width: 54px;
+    height: auto; }
   .navbar .navbar-toggler {
-    border: none; }
+    border: none;
+    height: 31.15px;
+    width: 41.15px;
+    border-radius: 200%;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .navbar .navbar-toggler:focus {
+      height: 41.15px;
+      width: 41.15px;
+      background-color: rgba(149, 249, 227, 0.7); }
 
 #banner-section {
   background-image: url("../img/banner-bg.jpg");
@@ -394,8 +401,8 @@ body {
       font-family: "Quicksand", sans-serif; }
 
 .btn-default {
-  color: #fff;
-  background-color: #363636; }
+  color: #28a745;
+  font-weight: 600; }
   .btn-default:hover {
     background-color: #28a745;
     color: #fff; }
@@ -417,16 +424,55 @@ body {
 #ui-section {
   background-color: #363636; }
   #ui-section .owl-carousel img {
-    width: 98%;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
     #ui-section .owl-carousel img:hover {
       cursor: pointer;
-      width: 100%; }
+      -webkit-transform: scale(1);
+      transform: scale(1); }
   #ui-section .owl-carousel .owl-dots {
     padding: 10px 0; }
     #ui-section .owl-carousel .owl-dots .owl-dot :hover {
-      background-color: #95f9e3; }
+      background-color: #28a745; }
     #ui-section .owl-carousel .owl-dots .owl-dot.active span {
       width: 30px;
-      background-color: #95f9e3; }
+      background-color: #28a745; }
+
+#testimonial-section {
+  background-color: #95f9e3; }
+  #testimonial-section blockquote {
+    margin: 5px 0;
+    color: rgba(54, 54, 54, 0.7);
+    font-size: 14px; }
+  #testimonial-section .card {
+    background-color: transparent;
+    margin: 20px auto; }
+    #testimonial-section .card .card-body {
+      padding: 0; }
+      #testimonial-section .card .card-body .user-title {
+        font-size: 14px;
+        text-align: left;
+        font-family: #95f9e3;
+        font-weight: 600; }
+
+#subscribe-section input:hover {
+  border-color: #28a745; }
+
+#footer-section .footer-brand img {
+  width: 54px;
+  height: auto; }
+
+#footer-section .footer-list-item {
+  list-style-type: none; }
+  #footer-section .footer-list-item span {
+    display: block;
+    margin: 0 auto;
+    font-weight: 600; }
+  #footer-section .footer-list-item li a {
+    color: rgba(54, 54, 54, 0.7);
+    font-size: 14px; }
+
+#footer-section .copy-right {
+  background-color: #95f9e3; }
